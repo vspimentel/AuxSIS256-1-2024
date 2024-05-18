@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border-spacing: 0;
+      & th {
+        background-color: aqua;
+      }
+    }
+  </style>
+  <body>
+    <table border="1" id="tabla">
+      <tr>
+        <th>Nro</th>
+        <th>Apellidos y nombres</th>
+        <th>Edad</th>
+        <th>Materia</th>
+        <th>Nota</th>
+      </tr>
+    </table>
+    <label>Apellidos y nombres</label>
+    <input type="text" id="nombres" />
+    <label>Edad</label>
+    <input type="number" id="edad" />
+    <label>Materia</label>
+    <input type="text" id="materia" />
+    <label>Nota</label>
+    <input type="number" id="nota" />
+    <br />
+    <button onclick="agregarEstudiante()">Agregar</button>
+    <button onclick="encontrarMejorEstudiante()">Mejor estudiante</button>
+  </body>
+  <script src="script.js"></script>
+</html>
