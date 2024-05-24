@@ -1,0 +1,28 @@
+<form action="javascript:tabla()" id="datosOperacion" method="post">
+  <div>Tabla de</div>
+  <input type="number" name="num" />
+  <div class="radios">
+    <div style="display: flex">
+      <input type="radio" name="operacion" value="suma" />
+      <div>Suma</div>
+    </div>
+    <div style="display: flex">
+      <input type="radio" name="operacion" value="resta" />
+      <div>Resta</div>
+    </div>
+  </div>
+  <div class="radios">
+    <div style="display: flex">
+      <input type="radio" name="operacion" value="multiplicacion" />
+      <div>Multiplicación</div>
+    </div>
+    <div style="display: flex">
+      <input type="radio" name="operacion" value="division" />
+      <div>División</div>
+    </div>
+  </div>
+  <div>Hasta</div>
+  <input type="number" name="hasta" />
+  <button type="submit">Tabla</button>
+</form>
+<div id="tabla"></div>

@@ -1,0 +1,32 @@
+<div style="display: flex">
+  <div style="display: flex; flex-direction: column">
+    <label>Ancho</label>
+    <input type="number" id="ancho" />
+  </div>
+  <div style="display: flex; flex-direction: column">
+    <label>Alto</label>
+    <input type="number" name="alto" />
+  </div>
+</div>
+<div style="display: flex">
+  <div style="display: flex; flex-direction: column">
+    <label>Color de fondo</label>
+    <input type="color" id="color_fondo" />
+  </div>
+  <div style="display: flex; flex-direction: column">
+    <label>Color principal</label>
+    <input type="color" name="color" />
+  </div>
+</div>
+<label>Elemento</label>
+<select id="elemento" style="width: fit-content">
+  <option value="mensaje">Mensaje</option>
+  <option value="contenido">Contenido</option>
+  <option value="menu">Menu</option>
+  <option value="boton1">Botón 1</option>
+  <option value="boton2">Botón 2</option>
+  <option value="boton3">Botón 3</option>
+</select>
+<button onclick="cambiarElemento()" style="width: fit-content">
+  Cambiar elemento
+</button>
