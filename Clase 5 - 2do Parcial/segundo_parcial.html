@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".\estilos.css" />
+    <title>Segundo Parcial SIS 256</title>
+  </head>
+  <body>
+    <header>
+      <div class="cabecera-izquierda">
+        <img
+          src=".\images\escudo.jpg"
+          alt="Escudo universidad san francisco xavier"
+          width="150px"
+        />
+      </div>
+      <div id="menu" class="cabecera-derecha">
+        <div class="cbd-superior">
+          <div class="btn-preguntas">
+            <button id="btn-pregunta1" class="btn-pregunta">Pregunta 1</button>
+            <div class="lineas-verticales"></div>
+            <button id="btn-pregunta2" class="btn-pregunta">Pregunta 2</button>
+            <div class="lineas-verticales"></div>
+            <button class="btn-pregunta" onclick="pregunta3()">
+              Pregunta 3
+            </button>
+            <div class="lineas-verticales"></div>
+            <button class="btn-pregunta" onclick="pregunta4()">
+              Pregunta 4
+            </button>
+            <div class="lineas-verticales"></div>
+            <button class="btn-pregunta" onclick="pregunta5()">
+              Pregunta 5
+            </button>
+          </div>
+        </div>
+        <div id="titulo" class="tit-preguntas"></div>
+      </div>
+    </header>
+    <main>
+      <div id="sub-menu" class="barra-lat-izquierda">
+        <div class="btn-opciones btn-op-principal">Opciones</div>
+        <div id="barraLatOpciones">
+          <button class="btn-materias btn-opciones btn-op-secundarios">
+            Detalle 1
+          </button>
+          <button class="btn-materias btn-opciones btn-op-secundarios">
+            Detalle 2
+          </button>
+        </div>
+      </div>
+      <div id="contenido" class="contenedor-derecho">
+        <div class="informacion">
+          <div class="cabecera-informacion">
+            <h3>SIS 256 Programación Web</h3>
+            <p>2do Examen Parcial</p>
+          </div>
+          <img
+            src=".\images\estudiante.png"
+            alt=""
+            height="120px"
+            width="120px"
+          />
+          <div class="footer-informacion">
+            <h4>Nombre Completo Estudiante</h4>
+            <p>Carrera</p>
+            <p>
+              Repositorio:<a href="https://github.com/" target="_blank">
+                haga click aqui
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="pie">Sucre - Semestre 1-2024</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

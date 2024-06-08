@@ -53,12 +53,9 @@ function login() {
   fetch("autenticar.php", { method: "POST", body: data })
     .then((response) => response.text())
     .then((data) => {
-      if (data == "Usuario no autenticado") {
+      if (data == "Usuario no autenticado" || data == "Captcha incorrecto") {
         mensaje.innerHTML = data;
       } else {
-        //const containerText = container.innerHTML;
-        //container.innerHTML = data;
-        //container.innerHTML += containerText;
         let header = document.createElement("div");
         header.classList.add("header");
         header.innerHTML = data;
@@ -76,4 +73,25 @@ function pregunta4() {
     }
   };
   ajax.send();
+}
+
+function pregunta5() {
+  fetch("datos.php")
+    .then((response) => response.json())
+    .then((data) => {
+      let select = document.createElement("select");
+      data.forEach((row) => {
+        let option = document.createElement("option");
+        option.value = row.imagen;
+        option.innerHTML = row.titulo;
+        select.appendChild(option);
+      });
+      select.addEventListener("change", function () {
+        let img = document.createElement("img");
+        img.src = `images/${select.value}`;
+        principal.innerHTML = "";
+        principal.appendChild(img);
+      });
+      mensaje.appendChild(select);
+    });
 }
